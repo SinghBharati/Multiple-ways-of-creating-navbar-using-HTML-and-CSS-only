@@ -1,0 +1,77 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background: #abcd;
+}
+
+.menubar {
+  margin: 4px;
+  grid-column: 12/13;
+  grid-row: 1/2;
+}
+
+#content {
+  background: #567;
+  color: white;
+  grid-template-columns: repeat(12, 1fr);
+  max-width: 960px;
+  margin: 0 auto;
+  display: grid;
+  padding: 10px;
+}
+
+.logo img {
+  margin: 4px;
+  width: 100px;
+}
+.menuitems {
+  cursor: pointer;
+  font-size: 25px;
+  padding: 10px;
+}
+.menubar i,
+.checkbox {
+  opacity: 0;
+  visibility: none;
+}
+
+@media screen and (max-width: 661px) {
+  input:checked + #content #menubar {
+    display: none;
+  }
+  input[type="checkbox"] {
+    cursor: pointer;
+    width: 25px;
+    height: 25px;
+  }
+  .checkbox {
+    margin: 11px;
+    grid-column: 12/13;
+    grid-row: 1/2;
+  }
+
+  .menubar i {
+    opacity: 1;
+    visibility: visible;
+  }
+  .home {
+    grid-column: 6/7;
+    grid-row: 2/3;
+  }
+
+  .aboutus {
+    grid-column: 6/7;
+    grid-row: 3/4;
+  }
+  .features {
+    grid-column: 6/7;
+    grid-row: 5/6;
+  }
+  .contact {
+    grid-column: 6/7;
+    grid-row: 7/8;
+  }
+}

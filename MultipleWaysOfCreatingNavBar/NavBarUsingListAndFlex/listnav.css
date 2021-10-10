@@ -1,0 +1,58 @@
+* {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: rgb(73, 71, 71);
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100%;
+  max-width: 1500px;
+}
+
+.wrapper {
+  width: 100%;
+  max-width: 1500px;
+  margin: 0 auto;
+}
+
+/* menu base styles */
+nav {
+  /* background: #333; */
+  background: rgb(110, 110, 110);
+  background-repeat: no-repeat;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav a {
+  text-decoration: none;
+  text-align: center;
+  color: rgb(255, 254, 254);
+  display: block;
+  padding: 10px;
+}
+
+nav a:hover {
+  background-color: #555;
+}
+
+nav ul li img {
+  width: 122px;
+  height: 35px;
+}
+/* flex styles */
+@media screen and (min-width: 768px) {
+  nav ul {
+    display: flex;
+  }
+
+  nav li {
+    flex: 1 1 0;
+  }
+}

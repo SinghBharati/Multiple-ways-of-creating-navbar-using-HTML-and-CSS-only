@@ -1,0 +1,38 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background: linear-gradient(to bottom right, #123, #1234, #abc);
+  background-repeat: no-repeat;
+}
+
+nav img {
+  height: 50px;
+  width: 150px;
+}
+nav .logo {
+  float: left;
+  margin-top: 0px;
+}
+nav ul {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+nav ul li {
+  list-style: none;
+  display: inline;
+  float: right;
+  cursor: pointer;
+  margin-top: 16px;
+  padding: 10px;
+}
+nav ul li a {
+  text-decoration: none;
+  color: #123;
+  font-size: 20px;
+}
+@media (max-width: 621px) {
+  nav ul li {
+    clear: both;
+  }
+}
